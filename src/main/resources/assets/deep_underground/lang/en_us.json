@@ -1,0 +1,105 @@
+{
+	"biome.deep_underground.deep_cave": "Deep Cave",
+	"biome.deep_underground.deep_dripstone_cave": "Deep Dripstone Cave",
+	"biome.deep_underground.frozen_cave": "Frozen Cave",
+
+	"sounds.deep_underground.portal_ambient": "Portal whirrs",
+	"sounds.deep_underground.portal_trigger": "Portal intensifies",
+	"sounds.deep_underground.portal_travel": "Portal transports",
+
+	"item.deep_underground.raw_cerulium": "Raw Cerulium",
+	"item.deep_underground.raw_viridium": "Raw Viridium",
+	"item.deep_underground.depthbound_scrap": "Depthbound Scrap",
+	"item.deep_underground.cerulium_ingot": "Cerulium Ingot",
+	"item.deep_underground.cerulium_nugget": "Cerulium Nugget",
+	"item.deep_underground.viridium_ingot": "Viridium Ingot",
+	"item.deep_underground.viridium_nugget": "Viridium Nugget",
+	"item.deep_underground.depthbound_steel_ingot": "Depthbound Steel Ingot",
+	"item.deep_underground.depthbound_steel_nugget": "Depthbound Steel Nugget",
+	"item.deep_underground.red_onyx": "Red Onyx",
+
+	"item.deep_underground.depthbound_steel_sword": "Depthbound Steel Sword",
+
+	"item.deep_underground.viridium_sword": "Viridium Sword",
+	"item.deep_underground.viridium_pickaxe": "Viridium Pickaxe",
+	"item.deep_underground.viridium_axe": "Viridium Axe",
+	"item.deep_underground.viridium_shovel": "Viridium Shovel",
+	"item.deep_underground.viridium_hoe": "Viridium Hoe",
+
+	"item.deep_underground.cerulium_sword": "Cerulium Sword",
+	"item.deep_underground.cerulium_pickaxe": "Cerulium Pickaxe",
+	"item.deep_underground.cerulium_axe": "Cerulium Axe",
+	"item.deep_underground.cerulium_shovel": "Cerulium Shovel",
+	"item.deep_underground.cerulium_hoe": "Cerulium Hoe",
+
+	"item.deep_underground.viridium_helmet": "Viridium Helmet",
+	"item.deep_underground.viridium_chestplate": "Viridium Chestplate",
+	"item.deep_underground.viridium_leggings": "Viridium Leggings",
+	"item.deep_underground.viridium_boots": "Viridium Boots",
+
+	"item.deep_underground.cerulium_helmet": "Cerulium Helmet",
+	"item.deep_underground.cerulium_chestplate": "Cerulium Chestplate",
+	"item.deep_underground.cerulium_leggings": "Cerulium Leggings",
+	"item.deep_underground.cerulium_boots": "Cerulium Boots",
+
+	"item.deep_underground.cerulium_shears": "Cerulium Shears",
+
+	"block.deep_underground.framed_polished_blackstone": "Framed Polished Blackstone",
+	"block.deep_underground.deep_underground_portal": "Deep Underground Portal",
+
+	"block.deep_underground.inert_depthbound_block": "Inert Depthbound Block",
+	"block.deep_underground.depthbound_steel_block": "Block of Depthbound Steel",
+
+	"block.deep_underground.grimslate": "Grimslate",
+	"block.deep_underground.cobbled_grimslate": "Cobbled Grimslate",
+	"block.deep_underground.cobbled_grimslate_stairs": "Cobbled Grimslate Stairs",
+	"block.deep_underground.cobbled_grimslate_slab": "Cobbled Grimslate Slab",
+	"block.deep_underground.cobbled_grimslate_wall": "Cobbled Grimslate Wall",
+
+	"block.deep_underground.polished_grimslate": "Polished Grimslate",
+	"block.deep_underground.polished_grimslate_stairs": "Polished Grimslate Stairs",
+	"block.deep_underground.polished_grimslate_slab": "Polished Grimslate Slab",
+	"block.deep_underground.polished_grimslate_wall": "Polished Grimslate Wall",
+
+	"block.deep_underground.grimslate_bricks": "Grimslate Bricks",
+	"block.deep_underground.grimslate_brick_stairs": "Grimslate Brick Stairs",
+	"block.deep_underground.grimslate_brick_slab": "Grimslate Brick Slab",
+	"block.deep_underground.grimslate_brick_wall": "Grimslate Brick Wall",
+
+	"block.deep_underground.black_granite": "Black Granite",
+	"block.deep_underground.black_granite_stairs": "Black Granite Stairs",
+	"block.deep_underground.black_granite_slab": "Black Granite Slab",
+	"block.deep_underground.black_granite_wall": "Black Granite Wall",
+
+	"block.deep_underground.polished_black_granite": "Polished Black Granite",
+	"block.deep_underground.polished_black_granite_stairs": "Polished Black Granite Stairs",
+	"block.deep_underground.polished_black_granite_slab": "Polished Black Granite Slab",
+	"block.deep_underground.polished_black_wall": "Polished Black Granite Wall",
+
+	"block.deep_underground.schist": "Schist",
+	"block.deep_underground.cobbled_schist": "Cobbled Schist",
+	"block.deep_underground.cobbled_schist_stairs": "Cobbled Schist Stairs",
+	"block.deep_underground.cobbled_schist_slab": "Cobbled Schist Slab",
+	"block.deep_underground.cobbled_schist_wall": "Cobbled Schist Wall",
+
+	"block.deep_underground.polished_schist": "Polished Schist",
+	"block.deep_underground.polished_schist_stairs": "Polished Schist Stairs",
+	"block.deep_underground.polished_schist_slab": "Polished Schist Slab",
+	"block.deep_underground.polished_schist_wall": "Polished Schist Wall",
+
+	"block.deep_underground.schist_bricks": "Schist Bricks",
+	"block.deep_underground.schist_brick_stairs": "Schist Brick Stairs",
+	"block.deep_underground.schist_brick_slab": "Schist Brick Slab",
+	"block.deep_underground.schist_brick_wall": "Schist Brick Wall",
+	"block.deep_underground.cracked_schist_bricks": "Cracked Schist Bricks",
+	"block.deep_underground.chiseled_schist": "Chiseled Schist",
+
+	"block.deep_underground.nether_red_onyx_ore": "Nether Red Onyx Ore",
+	"block.deep_underground.deepslate_viridium_ore": "Deepslate Viridium Ore",
+	"block.deep_underground.deepslate_cerulium_ore": "Deepslate Cerulium Ore",
+	"block.deep_underground.raw_viridium_block": "Block of Raw Viridium",
+	"block.deep_underground.raw_cerulium_block": "Block of Raw Cerulium",
+	"block.deep_underground.viridium_block": "Block of Viridium",
+	"block.deep_underground.cerulium_block": "Block of Cerulium",
+	"block.deep_underground.red_onyx_block": "Block of Red Onyx"
+}

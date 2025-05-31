@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": {
+      "item": "deep_underground:polished_grimslate"
+    }
+  },
+  "pattern": [
+    "gg",
+    "gg"
+  ],
+  "result": {
+    "count": 4,
+    "id": "deep_underground:grimslate_bricks"
+  }
+}

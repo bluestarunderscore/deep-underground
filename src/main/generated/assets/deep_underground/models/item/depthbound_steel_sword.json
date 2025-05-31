@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "deep_underground:item/depthbound_steel_sword"
+  }
+}

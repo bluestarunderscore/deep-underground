@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.2,
+  "group": "cerulium_ingot",
+  "ingredient": {
+    "item": "deep_underground:deepslate_cerulium_ore"
+  },
+  "result": {
+    "id": "deep_underground:cerulium_ingot"
+  }
+}

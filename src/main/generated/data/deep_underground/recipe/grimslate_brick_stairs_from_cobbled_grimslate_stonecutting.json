@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "deep_underground:cobbled_grimslate"
+  },
+  "result": {
+    "count": 1,
+    "id": "deep_underground:grimslate_brick_stairs"
+  }
+}

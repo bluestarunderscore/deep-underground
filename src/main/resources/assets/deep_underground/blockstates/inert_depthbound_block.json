@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "infusing=0": {
+      "model": "deep_underground:block/depthbound0"
+    },
+    "infusing=1": {
+      "model": "deep_underground:block/depthbound1"
+    },
+    "infusing=2": {
+      "model": "deep_underground:block/depthbound2"
+    },
+    "infusing=3": {
+      "model": "deep_underground:block/depthbound3"
+    }
+  }
+}

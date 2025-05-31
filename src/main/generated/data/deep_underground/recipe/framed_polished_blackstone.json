@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "b": {
+      "item": "minecraft:polished_blackstone"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "ggg",
+    "gbg",
+    "ggg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "deep_underground:framed_polished_blackstone"
+  }
+}

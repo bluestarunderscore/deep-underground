@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "deep_underground",
+	"version": "${version}",
+	"name": "Deep Underground",
+	"description": "Adds a difficult underground dimension",
+	"authors": [
+		"bluestarunderscore"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/deep_underground/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.bluestar.deepunderground.DeepUnderground"
+		],
+		"client": [
+			"com.bluestar.deepunderground.DeepUndergroundClient"
+		],
+		"fabric-datagen": [
+			"com.bluestar.deepunderground.DeepUndergroundDataGenerator"
+		]
+	},
+	"mixins": [
+		"deep_underground.mixins.json",
+		{
+			"config": "deep_underground.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

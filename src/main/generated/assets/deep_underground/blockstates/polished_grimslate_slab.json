@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "deep_underground:block/polished_grimslate_slab"
+    },
+    "type=double": {
+      "model": "deep_underground:block/polished_grimslate"
+    },
+    "type=top": {
+      "model": "deep_underground:block/polished_grimslate_slab_top"
+    }
+  }
+}

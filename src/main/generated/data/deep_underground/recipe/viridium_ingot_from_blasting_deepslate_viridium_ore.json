@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.2,
+  "group": "viridium_ingot",
+  "ingredient": {
+    "item": "deep_underground:deepslate_viridium_ore"
+  },
+  "result": {
+    "id": "deep_underground:viridium_ingot"
+  }
+}

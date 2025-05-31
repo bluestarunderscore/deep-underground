@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_inert_depthbound_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "deep_underground:inert_depthbound_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:depthbound_scrap"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_inert_depthbound_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:depthbound_scrap"
+    ]
+  }
+}

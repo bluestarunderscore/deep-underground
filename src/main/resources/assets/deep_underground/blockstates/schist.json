@@ -1,0 +1,62 @@
+{
+  "variants": {
+    "axis=x": [
+      {
+        "model": "deep_underground:block/schist",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "deep_underground:block/schist_mirrored",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "deep_underground:block/schist",
+        "x": 90,
+        "y": 90
+      },
+      {
+        "model": "deep_underground:block/schist_mirrored",
+        "x": 90,
+        "y": 90
+      }
+    ],
+    "axis=y": [
+      {
+        "model": "deep_underground:block/schist"
+      },
+      {
+        "model": "deep_underground:block/schist_mirrored"
+      },
+      {
+        "model": "deep_underground:block/schist",
+        "y": 180
+      },
+      {
+        "model": "deep_underground:block/schist_mirrored",
+        "y": 180
+      }
+    ],
+    "axis=z": [
+      {
+        "model": "deep_underground:block/schist",
+        "x": 90
+      },
+      {
+        "model": "deep_underground:block/schist_mirrored",
+        "x": 90
+      },
+      {
+        "model": "deep_underground:block/schist",
+        "x": 90,
+        "y": 180
+      },
+      {
+        "model": "deep_underground:block/schist_mirrored",
+        "x": 90,
+        "y": 180
+      }
+    ]
+  }
+}

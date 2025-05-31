@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "deep_underground:item/cerulium_leggings",
+    "layer1": "minecraft:trims/items/leggings_trim_gold"
+  }
+}

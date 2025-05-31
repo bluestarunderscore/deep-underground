@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "deep_underground:block/inert_depthbound_block_2"
+  }
+}

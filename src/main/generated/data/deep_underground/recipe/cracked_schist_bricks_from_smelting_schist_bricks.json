@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "cracked_schist_bricks",
+  "ingredient": {
+    "item": "deep_underground:schist_bricks"
+  },
+  "result": {
+    "id": "deep_underground:cracked_schist_bricks"
+  }
+}

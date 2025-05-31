@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "deep_underground:block/deep_underground_portal_ns"
+    },
+    "axis=z": {
+      "model": "deep_underground:block/deep_underground_portal_ew"
+    },
+    "axis=y": {
+      "model": "deep_underground:block/deep_underground_portal_flat"
+    }
+  }
+}

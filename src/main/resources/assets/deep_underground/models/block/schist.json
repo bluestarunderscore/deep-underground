@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "deep_underground:block/schist_top",
+    "side": "deep_underground:block/schist"
+  }
+}

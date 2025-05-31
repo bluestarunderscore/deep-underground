@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_viridium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "deep_underground:deepslate_viridium_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:viridium_ingot_from_blasting_deepslate_viridium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_deepslate_viridium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:viridium_ingot_from_blasting_deepslate_viridium_ore"
+    ]
+  }
+}

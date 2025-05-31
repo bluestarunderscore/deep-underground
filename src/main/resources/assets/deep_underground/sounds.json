@@ -1,0 +1,20 @@
+{
+	"block.deep_underground_portal.trigger": {
+		"subtitle": "sounds.deep_underground.portal_trigger",
+		"sounds": [
+			"deep_underground:portal/trigger"
+		]
+	},
+	"block.deep_underground_portal.travel": {
+		"subtitle": "sounds.deep_underground.portal_travel",
+		"sounds": [
+			"deep_underground:portal/travel"
+		]
+	},
+	"block.deep_underground_portal.ambient": {
+		"subtitle": "sounds.deep_underground.portal_ambient",
+		"sounds": [
+			"deep_underground:portal/portal"
+		]
+	}
+}

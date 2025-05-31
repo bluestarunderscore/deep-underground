@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cobbled_schist": {
+      "conditions": {
+        "items": [
+          {
+            "items": "deep_underground:cobbled_schist"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:schist_from_smelting_cobbled_schist"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cobbled_schist"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:schist_from_smelting_cobbled_schist"
+    ]
+  }
+}

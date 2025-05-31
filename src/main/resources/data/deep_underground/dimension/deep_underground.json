@@ -1,0 +1,49 @@
+{
+    "type": "deep_underground:deep_underground",
+    "generator" : {
+        "seed": 0,
+        "type":"minecraft:noise",
+        "biome_source": {
+            "type": "minecraft:multi_noise",
+            "biomes": [
+            {
+              "biome": "deep_underground:deep_cave",
+              "parameters": {
+                "continentalness": 0.0,
+                "depth": 0.0,
+                "erosion": 0.0,
+                "humidity": 0.3,
+                "offset": 0.0,
+                "temperature": 0.2,
+                "weirdness": 0.0
+              }
+            },
+            {
+              "biome": "deep_underground:deep_dripstone_cave",
+              "parameters": {
+                "continentalness": 0.0,
+                "depth": 0.0,
+                "erosion": 0.0,
+                "humidity": 0.4,
+                "offset": 0.0,
+                "temperature": 0.8,
+                "weirdness": 0.0
+              }
+            },
+            {
+              "biome": "deep_underground:frozen_cave",
+              "parameters": {
+                "continentalness": 0.0,
+                "depth": 0.0,
+                "erosion": 0.0,
+                "humidity": 0.5,
+                "offset": 0.0,
+                "temperature": -0.8,
+                "weirdness": 0.0
+              }
+            }
+          ]
+        },
+        "settings": "deep_underground:deep_underground"
+    }
+}

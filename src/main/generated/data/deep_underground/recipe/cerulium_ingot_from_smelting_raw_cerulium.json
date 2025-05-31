@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.2,
+  "group": "cerulium_ingot",
+  "ingredient": {
+    "item": "deep_underground:raw_cerulium"
+  },
+  "result": {
+    "id": "deep_underground:cerulium_ingot"
+  }
+}

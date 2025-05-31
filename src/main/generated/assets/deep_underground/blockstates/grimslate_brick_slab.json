@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "deep_underground:block/grimslate_brick_slab"
+    },
+    "type=double": {
+      "model": "deep_underground:block/grimslate_bricks"
+    },
+    "type=top": {
+      "model": "deep_underground:block/grimslate_brick_slab_top"
+    }
+  }
+}

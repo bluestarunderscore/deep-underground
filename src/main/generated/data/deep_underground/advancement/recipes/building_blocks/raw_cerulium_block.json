@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_cerulium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "deep_underground:raw_cerulium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:raw_cerulium_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_cerulium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:raw_cerulium_block"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "deep_underground:viridium_ingot"
+    }
+  },
+  "pattern": [
+    "SS ",
+    "SI ",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "deep_underground:viridium_axe"
+  }
+}

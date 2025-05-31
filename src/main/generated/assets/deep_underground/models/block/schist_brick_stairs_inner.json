@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "deep_underground:block/schist_bricks",
+    "side": "deep_underground:block/schist_bricks",
+    "top": "deep_underground:block/schist_bricks"
+  }
+}
