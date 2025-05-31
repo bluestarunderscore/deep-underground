@@ -1,16 +1,10 @@
 package com.bluestar.deepunderground;
 
-import it.unimi.dsi.fastutil.objects.Object2ObjectArrayMap;
-import it.unimi.dsi.fastutil.objects.Object2ObjectMap;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.fabric.api.client.rendering.v1.DimensionRenderingRegistry;
 import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.impl.client.rendering.DimensionRenderingRegistryImpl;
 import net.minecraft.client.render.DimensionEffects;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.Util;
-import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.dimension.DimensionTypes;
 
 @Environment(EnvType.CLIENT)
 public class DungDimEffects

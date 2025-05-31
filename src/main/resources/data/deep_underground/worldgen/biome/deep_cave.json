@@ -29,7 +29,7 @@
 	"features": [
 		[],
 		[
-			"minecraft:lake_lava_underground",
+			"minecraft:lake_lava_underground"
 
 		],
 		[
@@ -54,7 +54,7 @@
 			"deep_underground:ore_lapis_deep",
 			"deep_underground:ore_redstone_deep",
 			"deep_underground:ore_cerulium_deep",
-			"deep_underground:ore_viridium_deep",
+			"deep_underground:ore_viridium_deep"
 		],
 		[
 			"minecraft:spring_lava"
