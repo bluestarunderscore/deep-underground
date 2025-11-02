@@ -6,6 +6,7 @@
 	"sounds.deep_underground.portal_ambient": "Portal whirrs",
 	"sounds.deep_underground.portal_trigger": "Portal intensifies",
 	"sounds.deep_underground.portal_travel": "Portal transports",
+	"sounds.deep_underground.portal_break": "Portal closes",
 
 	"item.deep_underground.raw_cerulium": "Raw Cerulium",
 	"item.deep_underground.raw_viridium": "Raw Viridium",
@@ -16,9 +17,12 @@
 	"item.deep_underground.viridium_nugget": "Viridium Nugget",
 	"item.deep_underground.depthbound_steel_ingot": "Depthbound Steel Ingot",
 	"item.deep_underground.depthbound_steel_nugget": "Depthbound Steel Nugget",
-	"item.deep_underground.red_onyx": "Red Onyx",
 
 	"item.deep_underground.depthbound_steel_sword": "Depthbound Steel Sword",
+	"item.deep_underground.depthbound_steel_pickaxe": "Depthbound Steel Pickaxe",
+	"item.deep_underground.depthbound_steel_axe": "Depthbound Steel Axe",
+	"item.deep_underground.depthbound_steel_shovel": "Depthbound Steel Shovel",
+	"item.deep_underground.depthbound_steel_hoe": "Depthbound Steel Hoe",
 
 	"item.deep_underground.viridium_sword": "Viridium Sword",
 	"item.deep_underground.viridium_pickaxe": "Viridium Pickaxe",
@@ -41,8 +45,6 @@
 	"item.deep_underground.cerulium_chestplate": "Cerulium Chestplate",
 	"item.deep_underground.cerulium_leggings": "Cerulium Leggings",
 	"item.deep_underground.cerulium_boots": "Cerulium Boots",
-
-	"item.deep_underground.cerulium_shears": "Cerulium Shears",
 
 	"block.deep_underground.framed_polished_blackstone": "Framed Polished Blackstone",
 	"block.deep_underground.deep_underground_portal": "Deep Underground Portal",
@@ -100,6 +102,5 @@
 	"block.deep_underground.raw_viridium_block": "Block of Raw Viridium",
 	"block.deep_underground.raw_cerulium_block": "Block of Raw Cerulium",
 	"block.deep_underground.viridium_block": "Block of Viridium",
-	"block.deep_underground.cerulium_block": "Block of Cerulium",
-	"block.deep_underground.red_onyx_block": "Block of Red Onyx"
+	"block.deep_underground.cerulium_block": "Block of Cerulium"
 }

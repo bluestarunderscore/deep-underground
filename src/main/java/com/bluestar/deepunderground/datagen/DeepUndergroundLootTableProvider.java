@@ -23,7 +23,6 @@ public class DeepUndergroundLootTableProvider extends FabricBlockLootTableProvid
         addDrop(DeepUndergroundBlocks.VIRIDIUM_BLOCK);
         addDrop(DeepUndergroundBlocks.RAW_VIRIDIUM_BLOCK);
         addDrop(DeepUndergroundBlocks.RAW_CERULIUM_BLOCK);
-        addDrop(DeepUndergroundBlocks.RED_ONYX_BLOCK);
         addDrop(DeepUndergroundBlocks.DEPTHBOUND_STEEL_BLOCK);
         addDrop(DeepUndergroundBlocks.INERT_DEPTHBOUND_BLOCK);
 

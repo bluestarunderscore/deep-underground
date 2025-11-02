@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:breeze_rod"
+    },
+    "S": {
+      "item": "deep_underground:depthbound_steel_ingot"
+    }
+  },
+  "pattern": [
+    "SS ",
+    " I ",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "deep_underground:depthbound_steel_hoe"
+  }
+}

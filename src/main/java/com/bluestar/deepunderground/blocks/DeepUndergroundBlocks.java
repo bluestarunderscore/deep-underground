@@ -1,6 +1,7 @@
 package com.bluestar.deepunderground.blocks;
 
 import com.bluestar.deepunderground.DeepUnderground;
+import com.bluestar.deepunderground.DeepUndergroundSounds;
 import net.kyrptonaught.customportalapi.CustomPortalBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -29,8 +30,7 @@ public class DeepUndergroundBlocks
             "viridium_block", true, true);
     public static final Block CERULIUM_BLOCK = register(new Block(AbstractBlock.Settings.copy(Blocks.NETHERITE_BLOCK).sounds(BlockSoundGroup.METAL)),
             "cerulium_block", true, true);
-    public static final Block RED_ONYX_BLOCK = register(new Block(AbstractBlock.Settings.copy(Blocks.NETHERITE_BLOCK).sounds(BlockSoundGroup.METAL)),
-            "red_onyx_block", true, false);
+
     public static final Block INERT_DEPTHBOUND_BLOCK = register(new InertDepthboundBlock(),
             "inert_depthbound_block", true, true);
     public static final Block DEPTHBOUND_STEEL_BLOCK = register(new Block(AbstractBlock.Settings.copy(Blocks.NETHERITE_BLOCK).sounds(BlockSoundGroup.NETHERITE)),
@@ -120,16 +120,15 @@ public class DeepUndergroundBlocks
             "schist_brick_wall", true, false);
 
     public static final CustomPortalBlock DEEP_PORTAL = registerPortal(
-            new DeepUndergroundPortalBlock(AbstractBlock.Settings.create()
+            new DeepUndergroundPortalBlock(AbstractBlock.Settings
+                    .copy(Blocks.NETHER_PORTAL)
                     .noCollision()
-                    .ticksRandomly()
-                    .strength(-1.0f)
-                    .sounds(BlockSoundGroup.SHROOMLIGHT)
-                    .luminance(state -> 14)
                     .nonOpaque()
+                    .blockVision((state, view, pos) -> false)
+                    .sounds(DeepUndergroundSounds.PORTAL)
                     .pistonBehavior(PistonBehavior.BLOCK)),
-            "deep_underground_portal",
-            false
+                    "deep_underground_portal",
+                    false
     );
 
     public static void initialize()

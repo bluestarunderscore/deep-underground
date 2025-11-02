@@ -46,11 +46,7 @@ public class DeepUndergroundItemTagProvider extends FabricTagProvider.ItemTagPro
         getOrCreateTagBuilder(ItemTags.BEACON_PAYMENT_ITEMS)
                 .add(DeepUndergroundItems.CERULIUM_INGOT)
                 .add(DeepUndergroundItems.VIRIDIUM_INGOT)
-                .add(DeepUndergroundItems.RED_ONYX)
                 .add(DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT);
-
-        getOrCreateTagBuilder(COMMON_GEMS)
-                .add(DeepUndergroundItems.RED_ONYX);
 
         getOrCreateTagBuilder(COMMON_INGOTS)
                 .add(DeepUndergroundItems.VIRIDIUM_INGOT)
@@ -91,7 +87,6 @@ public class DeepUndergroundItemTagProvider extends FabricTagProvider.ItemTagPro
                 .add(DeepUndergroundBlocks.RAW_CERULIUM_BLOCK.asItem())
                 .add(DeepUndergroundBlocks.VIRIDIUM_BLOCK.asItem())
                 .add(DeepUndergroundBlocks.CERULIUM_BLOCK.asItem())
-                .add(DeepUndergroundBlocks.RED_ONYX_BLOCK.asItem())
                 .add(DeepUndergroundBlocks.INERT_DEPTHBOUND_BLOCK.asItem())
                 .add(DeepUndergroundBlocks.DEPTHBOUND_STEEL_BLOCK.asItem());
 
@@ -194,15 +189,19 @@ public class DeepUndergroundItemTagProvider extends FabricTagProvider.ItemTagPro
                 .add(DeepUndergroundItems.CERULIUM_SWORD);
         getOrCreateTagBuilder(ItemTags.PICKAXES)
                 .add(DeepUndergroundItems.VIRIDIUM_PICKAXE)
+                .add(DeepUndergroundItems.DEPTHBOUND_PICKAXE)
                 .add(DeepUndergroundItems.CERULIUM_PICKAXE);
         getOrCreateTagBuilder(ItemTags.AXES)
                 .add(DeepUndergroundItems.VIRIDIUM_AXE)
+                .add(DeepUndergroundItems.DEPTHBOUND_AXE)
                 .add(DeepUndergroundItems.CERULIUM_AXE);
         getOrCreateTagBuilder(ItemTags.SHOVELS)
                 .add(DeepUndergroundItems.VIRIDIUM_SHOVEL)
+                .add(DeepUndergroundItems.DEPTHBOUND_SHOVEL)
                 .add(DeepUndergroundItems.CERULIUM_SHOVEL);
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(DeepUndergroundItems.VIRIDIUM_HOE)
+                .add(DeepUndergroundItems.DEPTHBOUND_HOE)
                 .add(DeepUndergroundItems.CERULIUM_HOE);
 
     }

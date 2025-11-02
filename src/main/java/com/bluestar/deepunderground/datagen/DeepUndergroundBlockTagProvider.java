@@ -24,7 +24,6 @@ public class DeepUndergroundBlockTagProvider extends FabricTagProvider.BlockTagP
         getOrCreateTagBuilder(BlockTags.BEACON_BASE_BLOCKS)
                 .add(DeepUndergroundBlocks.VIRIDIUM_BLOCK)
                 .add(DeepUndergroundBlocks.CERULIUM_BLOCK)
-                .add(DeepUndergroundBlocks.RED_ONYX_BLOCK)
                 .add(DeepUndergroundBlocks.DEPTHBOUND_STEEL_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
@@ -70,7 +69,6 @@ public class DeepUndergroundBlockTagProvider extends FabricTagProvider.BlockTagP
                 .add(DeepUndergroundBlocks.RAW_CERULIUM_BLOCK)
                 .add(DeepUndergroundBlocks.VIRIDIUM_BLOCK)
                 .add(DeepUndergroundBlocks.CERULIUM_BLOCK)
-                .add(DeepUndergroundBlocks.RED_ONYX_BLOCK)
                 .add(DeepUndergroundBlocks.INERT_DEPTHBOUND_BLOCK)
                 .add(DeepUndergroundBlocks.DEPTHBOUND_STEEL_BLOCK);
 

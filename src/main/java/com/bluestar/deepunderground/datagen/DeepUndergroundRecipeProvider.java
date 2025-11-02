@@ -123,8 +123,6 @@ public class DeepUndergroundRecipeProvider extends FabricRecipeProvider
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, DeepUndergroundItems.RAW_VIRIDIUM, RecipeCategory.BUILDING_BLOCKS, DeepUndergroundBlocks.RAW_VIRIDIUM_BLOCK);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, DeepUndergroundItems.DEPTHBOUND_SCRAP, RecipeCategory.BUILDING_BLOCKS, DeepUndergroundBlocks.INERT_DEPTHBOUND_BLOCK);
 
-        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, DeepUndergroundItems.RED_ONYX, RecipeCategory.BUILDING_BLOCKS, DeepUndergroundBlocks.RED_ONYX_BLOCK);
-
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, DeepUndergroundItems.CERULIUM_NUGGET, RecipeCategory.MISC, DeepUndergroundItems.CERULIUM_INGOT);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, DeepUndergroundItems.VIRIDIUM_NUGGET, RecipeCategory.MISC, DeepUndergroundItems.VIRIDIUM_INGOT);
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.MISC, DeepUndergroundItems.DEPTHBOUND_STEEL_NUGGET, RecipeCategory.MISC, DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT);
@@ -372,6 +370,46 @@ public class DeepUndergroundRecipeProvider extends FabricRecipeProvider
                 .criterion(FabricRecipeProvider.hasItem(DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT),
                         FabricRecipeProvider.conditionsFromItem((DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT)))
                 .offerTo(recipeExporter, "depthbound_steel_sword");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, DeepUndergroundItems.DEPTHBOUND_PICKAXE)
+                .pattern("SSS")
+                .pattern(" I ")
+                .pattern(" I ")
+                .input('S', DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT)
+                .input('I', Items.BREEZE_ROD)
+                .criterion(FabricRecipeProvider.hasItem(DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT),
+                        FabricRecipeProvider.conditionsFromItem((DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT)))
+                .offerTo(recipeExporter, "depthbound_steel_pickaxe");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, DeepUndergroundItems.DEPTHBOUND_AXE)
+                .pattern("SS ")
+                .pattern("SI ")
+                .pattern(" I ")
+                .input('S', DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT)
+                .input('I', Items.BREEZE_ROD)
+                .criterion(FabricRecipeProvider.hasItem(DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT),
+                        FabricRecipeProvider.conditionsFromItem((DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT)))
+                .offerTo(recipeExporter, "depthbound_steel_axe");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, DeepUndergroundItems.DEPTHBOUND_SHOVEL)
+                .pattern("S")
+                .pattern("I")
+                .pattern("I")
+                .input('S', DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT)
+                .input('I', Items.BREEZE_ROD)
+                .criterion(FabricRecipeProvider.hasItem(DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT),
+                        FabricRecipeProvider.conditionsFromItem((DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT)))
+                .offerTo(recipeExporter, "depthbound_steel_shovel");
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, DeepUndergroundItems.DEPTHBOUND_HOE)
+                .pattern("SS ")
+                .pattern(" I ")
+                .pattern(" I ")
+                .input('S', DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT)
+                .input('I', Items.BREEZE_ROD)
+                .criterion(FabricRecipeProvider.hasItem(DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT),
+                        FabricRecipeProvider.conditionsFromItem((DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT)))
+                .offerTo(recipeExporter, "depthbound_steel_hoe");
     }
 
     public static void offerStairsRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {

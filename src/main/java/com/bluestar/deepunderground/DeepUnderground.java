@@ -29,6 +29,7 @@ public class DeepUnderground implements ModInitializer {
 				.customPortalBlock(DeepUndergroundBlocks.DEEP_PORTAL)
 				.lightWithFluid(Fluids.LAVA)
 				.destDimID(Identifier.of(MOD_ID, "deep_underground"))
+				.onlyLightInOverworld()
 				.registerPostTPPortalAmbience(player -> new CPASoundEventData(DeepUndergroundSounds.PORTAL_TRAVEL, 1.0F, 0.55F))
 				.registerInPortalAmbienceSound(player -> new CPASoundEventData(DeepUndergroundSounds.PORTAL_TRIGGER, 1.0F, 0.55F))
 				.setPortalSearchYRange(170,236)

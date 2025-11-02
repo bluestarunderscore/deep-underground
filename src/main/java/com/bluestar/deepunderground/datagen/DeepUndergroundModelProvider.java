@@ -61,8 +61,6 @@ public class DeepUndergroundModelProvider extends FabricModelProvider
         blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.RAW_CERULIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.VIRIDIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.CERULIUM_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.RED_ONYX_BLOCK);
-        //blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.INERT_DEPTHBOUND_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.DEPTHBOUND_STEEL_BLOCK);
 
         //BLACK GRANITE
@@ -108,7 +106,6 @@ public class DeepUndergroundModelProvider extends FabricModelProvider
         itemModelGenerator.register(DeepUndergroundItems.CERULIUM_NUGGET, Models.GENERATED);
         itemModelGenerator.register(DeepUndergroundItems.VIRIDIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(DeepUndergroundItems.VIRIDIUM_NUGGET, Models.GENERATED);
-        itemModelGenerator.register(DeepUndergroundItems.RED_ONYX, Models.GENERATED);
         itemModelGenerator.register(DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT, Models.GENERATED);
         itemModelGenerator.register(DeepUndergroundItems.DEPTHBOUND_STEEL_NUGGET, Models.GENERATED);
         itemModelGenerator.register(DeepUndergroundItems.DEPTHBOUND_SCRAP, Models.GENERATED);
@@ -126,6 +123,11 @@ public class DeepUndergroundModelProvider extends FabricModelProvider
         itemModelGenerator.register(DeepUndergroundItems.CERULIUM_HOE, Models.HANDHELD);
 
         itemModelGenerator.register(DeepUndergroundItems.DEPTHBOUND_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(DeepUndergroundItems.DEPTHBOUND_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(DeepUndergroundItems.DEPTHBOUND_AXE, Models.HANDHELD);
+        itemModelGenerator.register(DeepUndergroundItems.DEPTHBOUND_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(DeepUndergroundItems.DEPTHBOUND_HOE, Models.HANDHELD);
+
 
         itemModelGenerator.registerArmor(((ArmorItem) DeepUndergroundItems.VIRIDIUM_HELMET));
         itemModelGenerator.registerArmor(((ArmorItem) DeepUndergroundItems.VIRIDIUM_CHESTPLATE));

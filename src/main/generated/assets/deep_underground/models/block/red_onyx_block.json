@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "deep_underground:block/red_onyx_block"
-  }
-}

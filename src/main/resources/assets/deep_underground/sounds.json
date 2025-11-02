@@ -1,4 +1,10 @@
 {
+	"block.deep_underground_portal.break": {
+		"subtitle": "block.deep_underground.portal_break",
+		"sounds": [
+			"deep_underground:block/deep_underground_portal/break"
+		]
+	},
 	"block.deep_underground_portal.trigger": {
 		"subtitle": "sounds.deep_underground.portal_trigger",
 		"sounds": [

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_red_onyx": {
+    "has_depthbound_steel_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "deep_underground:red_onyx"
+            "items": "deep_underground:depthbound_steel_ingot"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:red_onyx_block"
+        "recipe": "minecraft:depthbound_steel_shovel"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_red_onyx"
+      "has_depthbound_steel_ingot"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:red_onyx_block"
+      "minecraft:depthbound_steel_shovel"
     ]
   }
 }

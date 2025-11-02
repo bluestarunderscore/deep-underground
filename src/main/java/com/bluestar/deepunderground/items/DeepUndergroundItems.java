@@ -29,8 +29,6 @@ public class DeepUndergroundItems
 
     public static final Item DEPTHBOUND_STEEL_NUGGET = register("depthbound_steel_nugget", new Item(new Item.Settings().fireproof()));
 
-    public static final Item RED_ONYX = register("red_onyx", new Item(new Item.Settings()));
-
     public static final Item DEPTHBOUND_SCRAP = register("depthbound_scrap", new Item(new Item.Settings()));
 
     public static final Item VIRIDIUM_HELMET = registerItem("viridium_helmet",
@@ -94,6 +92,18 @@ public class DeepUndergroundItems
     public static final Item DEPTHBOUND_SWORD = registerItem("depthbound_steel_sword",
             new SwordItem(DeepUndergroundToolMaterials.DEPTHBOUND_STEEL, new Item.Settings().fireproof()
                     .attributeModifiers(MiningToolItem.createAttributeModifiers(DeepUndergroundToolMaterials.DEPTHBOUND_STEEL, 1, -2.4f))));
+    public static final Item DEPTHBOUND_PICKAXE = registerItem("depthbound_steel_pickaxe",
+            new PickaxeItem(DeepUndergroundToolMaterials.CERULIUM, new Item.Settings().fireproof()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(DeepUndergroundToolMaterials.CERULIUM, -1, -2.8f))));
+    public static final Item DEPTHBOUND_AXE = registerItem("depthbound_steel_axe",
+            new AxeItem(DeepUndergroundToolMaterials.CERULIUM, new Item.Settings().fireproof()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(DeepUndergroundToolMaterials.CERULIUM, 2, -3f))));
+    public static final Item DEPTHBOUND_SHOVEL = registerItem("depthbound_steel_shovel",
+            new ShovelItem(DeepUndergroundToolMaterials.CERULIUM, new Item.Settings().fireproof()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(DeepUndergroundToolMaterials.CERULIUM, -0.5F, -3f))));
+    public static final Item DEPTHBOUND_HOE = registerItem("depthbound_steel_hoe",
+            new HoeItem(DeepUndergroundToolMaterials.CERULIUM, new Item.Settings().fireproof()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(DeepUndergroundToolMaterials.CERULIUM, -0.5F, 0f))));
 
     public static void initialize()
     {
@@ -115,9 +125,6 @@ public class DeepUndergroundItems
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.CERULIUM_INGOT));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.DEPTHBOUND_STEEL_INGOT));
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
-                .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.RED_ONYX));
-
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
             .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.VIRIDIUM_SHOVEL));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
@@ -137,6 +144,14 @@ public class DeepUndergroundItems
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.CERULIUM_HOE));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.DEPTHBOUND_SWORD));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.DEPTHBOUND_PICKAXE));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.DEPTHBOUND_AXE));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.DEPTHBOUND_SHOVEL));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.DEPTHBOUND_HOE));
 
         //COMBAR
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
@@ -259,8 +274,6 @@ public class DeepUndergroundItems
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.INERT_DEPTHBOUND_BLOCK.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.DEPTHBOUND_STEEL_BLOCK.asItem()));
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
-                .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.RED_ONYX_BLOCK.asItem()));
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.BLACK_GRANITE.asItem()));

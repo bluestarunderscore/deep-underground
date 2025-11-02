@@ -49,7 +49,7 @@ public class DeepUndergroundPortalBlock extends CustomPortalBlock
 
     public DeepUndergroundPortalBlock(AbstractBlock.Settings settings) {
         super(settings);
-        this.setDefaultState((this.stateManager.getDefaultState()).with(AXIS, Direction.Axis.X));
+        //this.setDefaultState((this.stateManager.getDefaultState()).with(AXIS, Direction.Axis.X));
     }
 
     @Override
@@ -71,14 +71,10 @@ public class DeepUndergroundPortalBlock extends CustomPortalBlock
         }
     }
 
-    public Portal.Effect getPortalEffect() {
-        return Effect.CONFUSION;
-    }
-
     @Override
     @Environment(EnvType.CLIENT)
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
-        if (random.nextInt(100) == 0) {
+        if (random.nextInt(200) == 0) {
             world.playSound((double)pos.getX() + (double)0.5F, (double)pos.getY() + (double)0.5F, (double)pos.getZ() + (double)0.5F, DeepUndergroundSounds.PORTAL_AMBIENT, SoundCategory.BLOCKS, 0.5F, 1.0F, false);
         }
 
