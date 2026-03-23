@@ -67,11 +67,47 @@ public class DeepUndergroundRecipeProvider extends FabricRecipeProvider
         offerWallRecipe(recipeExporter, DeepUndergroundBlocks.POLISHED_SCHIST_WALL, DeepUndergroundBlocks.POLISHED_SCHIST);
         offerWallRecipe(recipeExporter, DeepUndergroundBlocks.SCHIST_BRICK_WALL, DeepUndergroundBlocks.SCHIST_BRICKS);
 
+        //HADEITE
+        offerStairsRecipe(recipeExporter, DeepUndergroundBlocks.HADEITE_BRICK_STAIRS, DeepUndergroundBlocks.HADEITE_BRICKS);
+        offerSlabRecipe(recipeExporter, DeepUndergroundBlocks.HADEITE_BRICK_SLAB, DeepUndergroundBlocks.HADEITE_BRICKS);
+        offerWallRecipe(recipeExporter, DeepUndergroundBlocks.HADEITE_BRICK_WALL, DeepUndergroundBlocks.HADEITE_BRICKS);
 
         //POLISHED
         offerPolishedStoneRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, DeepUndergroundBlocks.POLISHED_BLACK_GRANITE, DeepUndergroundBlocks.BLACK_GRANITE);
         offerPolishedStoneRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, DeepUndergroundBlocks.POLISHED_GRIMSLATE, DeepUndergroundBlocks.COBBLED_GRIMSLATE);
         offerPolishedStoneRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, DeepUndergroundBlocks.POLISHED_SCHIST, DeepUndergroundBlocks.COBBLED_SCHIST);
+
+        offerChiseledBlockRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, DeepUndergroundBlocks.CHISELED_HADEITE_BRICKS, DeepUndergroundBlocks.HADEITE_BRICKS);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DeepUndergroundBlocks.CYCLITE_BLOCK, 1)
+                .pattern("gg")
+                .pattern("gg")
+                .input('g', DeepUndergroundItems.CYCLITE)
+                .criterion(hasItem(DeepUndergroundItems.CYCLITE), conditionsFromItem(DeepUndergroundItems.CYCLITE))
+                .offerTo(recipeExporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, DeepUndergroundItems.HADEITE_BRICK, 4)
+                        .input(DeepUndergroundBlocks.HADEITE_BRICKS)
+                        .criterion(hasItem(DeepUndergroundBlocks.HADEITE_BRICKS), conditionsFromItem(DeepUndergroundBlocks.HADEITE_BRICKS))
+                                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DeepUndergroundBlocks.HADEITE_BRICKS, 1)
+                .pattern("gg")
+                .pattern("gg")
+                .input('g', DeepUndergroundItems.HADEITE_BRICK)
+                .criterion(hasItem(DeepUndergroundItems.HADEITE_BRICK), conditionsFromItem(DeepUndergroundItems.HADEITE_BRICK))
+                .offerTo(recipeExporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, DeepUndergroundItems.HADEITE_CLUMP, 4)
+                .input(DeepUndergroundBlocks.HADEITE)
+                .criterion(hasItem(DeepUndergroundBlocks.HADEITE), conditionsFromItem(DeepUndergroundBlocks.HADEITE))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DeepUndergroundBlocks.HADEITE, 1)
+                .pattern("gg")
+                .pattern("gg")
+                .input('g', DeepUndergroundItems.HADEITE_CLUMP)
+                .criterion(hasItem(DeepUndergroundItems.HADEITE_CLUMP), conditionsFromItem(DeepUndergroundItems.HADEITE_CLUMP))
+                .offerTo(recipeExporter);
+
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, DeepUndergroundBlocks.GRIMSLATE_BRICKS, 4)
@@ -147,6 +183,8 @@ public class DeepUndergroundRecipeProvider extends FabricRecipeProvider
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.GRIMSLATE_BRICK_STAIRS, DeepUndergroundBlocks.POLISHED_GRIMSLATE);
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.GRIMSLATE_BRICK_STAIRS, DeepUndergroundBlocks.GRIMSLATE_BRICKS);
 
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.HADEITE_BRICK_STAIRS, DeepUndergroundBlocks.HADEITE_BRICKS);
+
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.COBBLED_SCHIST_STAIRS, DeepUndergroundBlocks.COBBLED_SCHIST);
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.POLISHED_SCHIST_STAIRS, DeepUndergroundBlocks.COBBLED_SCHIST);
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.POLISHED_SCHIST_STAIRS, DeepUndergroundBlocks.POLISHED_SCHIST);
@@ -165,6 +203,8 @@ public class DeepUndergroundRecipeProvider extends FabricRecipeProvider
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.GRIMSLATE_BRICK_SLAB, DeepUndergroundBlocks.COBBLED_GRIMSLATE, 2);
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.GRIMSLATE_BRICK_SLAB, DeepUndergroundBlocks.POLISHED_GRIMSLATE, 2);
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.GRIMSLATE_BRICK_SLAB, DeepUndergroundBlocks.GRIMSLATE_BRICKS, 2);
+
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.HADEITE_BRICK_SLAB, DeepUndergroundBlocks.HADEITE_BRICKS, 2);
 
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.COBBLED_SCHIST_SLAB, DeepUndergroundBlocks.COBBLED_SCHIST, 2);
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.POLISHED_SCHIST_SLAB, DeepUndergroundBlocks.COBBLED_SCHIST, 2);
@@ -191,6 +231,7 @@ public class DeepUndergroundRecipeProvider extends FabricRecipeProvider
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.SCHIST_BRICK_WALL, DeepUndergroundBlocks.POLISHED_SCHIST);
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.SCHIST_BRICK_WALL, DeepUndergroundBlocks.SCHIST_BRICKS);
         offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.BLACK_GRANITE_WALL, DeepUndergroundBlocks.BLACK_GRANITE);
+        offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, DeepUndergroundBlocks.HADEITE_BRICK_WALL, DeepUndergroundBlocks.HADEITE_BRICKS);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, DeepUndergroundItems.VIRIDIUM_HELMET)
                 .pattern("SSS")

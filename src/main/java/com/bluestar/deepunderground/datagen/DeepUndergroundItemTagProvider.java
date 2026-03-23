@@ -92,11 +92,13 @@ public class DeepUndergroundItemTagProvider extends FabricTagProvider.ItemTagPro
 
         getOrCreateTagBuilder(COMMON_D_ORES)
                 .add(DeepUndergroundBlocks.DEEPSLATE_VIRIDIUM_ORE.asItem())
-                .add(DeepUndergroundBlocks.DEEPSLATE_CERULIUM_ORE.asItem());
+                .add(DeepUndergroundBlocks.DEEPSLATE_CERULIUM_ORE.asItem())
+                .add(DeepUndergroundBlocks.DEEPSLATE_CYCLITE_ORE.asItem());
 
         getOrCreateTagBuilder(COMMON_ORES)
                 .add(DeepUndergroundBlocks.DEEPSLATE_VIRIDIUM_ORE.asItem())
-                .add(DeepUndergroundBlocks.DEEPSLATE_CERULIUM_ORE.asItem());
+                .add(DeepUndergroundBlocks.DEEPSLATE_CERULIUM_ORE.asItem())
+                .add(DeepUndergroundBlocks.DEEPSLATE_CYCLITE_ORE.asItem());
 
         getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)
                 .add(DeepUndergroundBlocks.COBBLED_SCHIST.asItem())
@@ -114,7 +116,8 @@ public class DeepUndergroundItemTagProvider extends FabricTagProvider.ItemTagPro
                 .add(DeepUndergroundBlocks.GRIMSLATE_BRICK_STAIRS.asItem())
                 .add(DeepUndergroundBlocks.COBBLED_SCHIST_STAIRS.asItem())
                 .add(DeepUndergroundBlocks.POLISHED_SCHIST_STAIRS.asItem())
-                .add(DeepUndergroundBlocks.SCHIST_BRICK_STAIRS.asItem());
+                .add(DeepUndergroundBlocks.SCHIST_BRICK_STAIRS.asItem())
+                .add(DeepUndergroundBlocks.HADEITE_BRICK_STAIRS.asItem());
 
         getOrCreateTagBuilder(ItemTags.SLABS)
                 .add(DeepUndergroundBlocks.BLACK_GRANITE_SLAB.asItem())
@@ -124,7 +127,8 @@ public class DeepUndergroundItemTagProvider extends FabricTagProvider.ItemTagPro
                 .add(DeepUndergroundBlocks.GRIMSLATE_BRICK_SLAB.asItem())
                 .add(DeepUndergroundBlocks.COBBLED_SCHIST_SLAB.asItem())
                 .add(DeepUndergroundBlocks.POLISHED_SCHIST_SLAB.asItem())
-                .add(DeepUndergroundBlocks.SCHIST_BRICK_SLAB.asItem());
+                .add(DeepUndergroundBlocks.SCHIST_BRICK_SLAB.asItem())
+                .add(DeepUndergroundBlocks.HADEITE_BRICK_SLAB.asItem());
 
         getOrCreateTagBuilder(ItemTags.WALLS)
                 .add(DeepUndergroundBlocks.BLACK_GRANITE_WALL.asItem())
@@ -133,7 +137,8 @@ public class DeepUndergroundItemTagProvider extends FabricTagProvider.ItemTagPro
                 .add(DeepUndergroundBlocks.GRIMSLATE_BRICK_WALL.asItem())
                 .add(DeepUndergroundBlocks.COBBLED_SCHIST_WALL.asItem())
                 .add(DeepUndergroundBlocks.POLISHED_SCHIST_WALL.asItem())
-                .add(DeepUndergroundBlocks.SCHIST_BRICK_WALL.asItem());
+                .add(DeepUndergroundBlocks.SCHIST_BRICK_WALL.asItem())
+                .add(DeepUndergroundBlocks.HADEITE_BRICK_WALL.asItem());
 
         getOrCreateTagBuilder(COMMON_ARMORS)
                 .add(DeepUndergroundItems.VIRIDIUM_HELMET)

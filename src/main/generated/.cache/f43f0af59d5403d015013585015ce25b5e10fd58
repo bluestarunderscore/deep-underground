@@ -1,10 +1,11 @@
-// 1.21.1	2025-05-26T14:09:21.0850483	Deep Underground/Tags for minecraft:block
-9feb005b713cca87f7c0c2f1b38fc60a0bf23877 data\minecraft\tags\block\mineable\pickaxe.json
-1f3ebad018288d89fb6198aa068131a957f7df70 data\minecraft\tags\block\base_stone_overworld.json
-ec7a5be6cfda49673c0f1a7df7be9fed25464890 data\minecraft\tags\block\deepslate_ore_replaceables.json
-b9b054cde94d9d173d6dd9dabd9b1513d642f49f data\minecraft\tags\block\stairs.json
-1f3ebad018288d89fb6198aa068131a957f7df70 data\minecraft\tags\block\overworld_carver_replaceables.json
-f2c978859f517e6f0eace3ed77de17a384e42bfa data\minecraft\tags\block\slabs.json
-2c44f88aa2119cdf1080fc84cc3a146e91051936 data\minecraft\tags\block\walls.json
+// 1.21.1	2026-03-23T11:07:01.8336666	Deep Underground/Tags for minecraft:block
+89578c6e4720d1e9fb749abbe6171902d02c9043 data\minecraft\tags\block\beacon_base_blocks.json
+43cc8f6390debceea3e820f3bb2132be5ef10d6e data\minecraft\tags\block\mineable\shovel.json
+8ea28811f884bf30a0b2986b85369cd3ec8ad1b1 data\minecraft\tags\block\stairs.json
 71f81dac741337be9733298fdd262ff0dd633a8d data\minecraft\tags\block\needs_diamond_tool.json
-af7d53dab0d92c4ab179deabf6e6a843bc5d254d data\minecraft\tags\block\beacon_base_blocks.json
+1f3ebad018288d89fb6198aa068131a957f7df70 data\minecraft\tags\block\base_stone_overworld.json
+8c5dd40e4c4d4a760342b2d9ef7f392a85d814b3 data\minecraft\tags\block\slabs.json
+91c28827adc1bf055753c7c1da0c5a78105c8c05 data\minecraft\tags\block\mineable\pickaxe.json
+ec7a5be6cfda49673c0f1a7df7be9fed25464890 data\minecraft\tags\block\deepslate_ore_replaceables.json
+1f3ebad018288d89fb6198aa068131a957f7df70 data\minecraft\tags\block\overworld_carver_replaceables.json
+aa019e4188374bad16a056f1f58ced1e86f62f44 data\minecraft\tags\block\walls.json

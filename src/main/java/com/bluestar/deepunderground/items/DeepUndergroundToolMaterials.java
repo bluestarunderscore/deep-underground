@@ -2,6 +2,8 @@ package com.bluestar.deepunderground.items;
 
 import com.google.common.base.Suppliers;
 import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;

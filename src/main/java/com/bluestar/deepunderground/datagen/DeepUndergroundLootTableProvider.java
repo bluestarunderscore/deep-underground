@@ -5,6 +5,8 @@ import com.bluestar.deepunderground.items.DeepUndergroundItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
+import net.minecraft.item.ItemConvertible;
+import net.minecraft.loot.provider.number.LootNumberProvider;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -26,6 +28,8 @@ public class DeepUndergroundLootTableProvider extends FabricBlockLootTableProvid
         addDrop(DeepUndergroundBlocks.DEPTHBOUND_STEEL_BLOCK);
         addDrop(DeepUndergroundBlocks.INERT_DEPTHBOUND_BLOCK);
 
+        addDrop(DeepUndergroundBlocks.CYCLITE_BLOCK);
+
         addDrop(DeepUndergroundBlocks.FRAMED_POLISHED_BLACKSTONE);
 
 
@@ -37,6 +41,8 @@ public class DeepUndergroundLootTableProvider extends FabricBlockLootTableProvid
         addDrop(DeepUndergroundBlocks.SCHIST_BRICKS);
         addDrop(DeepUndergroundBlocks.CRACKED_SCHIST_BRICKS);
         addDrop(DeepUndergroundBlocks.CHISELED_SCHIST);
+        addDrop(DeepUndergroundBlocks.HADEITE_BRICKS);
+        addDrop(DeepUndergroundBlocks.CHISELED_HADEITE_BRICKS);
 
         addDrop(DeepUndergroundBlocks.DEEPSLATE_VIRIDIUM_ORE, oreDrops(DeepUndergroundBlocks.DEEPSLATE_VIRIDIUM_ORE, DeepUndergroundItems.RAW_VIRIDIUM));
         addDrop(DeepUndergroundBlocks.DEEPSLATE_CERULIUM_ORE, oreDrops(DeepUndergroundBlocks.DEEPSLATE_CERULIUM_ORE, DeepUndergroundItems.RAW_CERULIUM));
@@ -58,6 +64,7 @@ public class DeepUndergroundLootTableProvider extends FabricBlockLootTableProvid
         addSlab(DeepUndergroundBlocks.SCHIST_BRICK_SLAB);
         addSlab(DeepUndergroundBlocks.BLACK_GRANITE_SLAB);
         addSlab(DeepUndergroundBlocks.POLISHED_BLACK_GRANITE_SLAB);
+        addSlab(DeepUndergroundBlocks.HADEITE_BRICK_SLAB);
 
         //STAIRS
         addDrop(DeepUndergroundBlocks.COBBLED_GRIMSLATE_STAIRS);
@@ -68,6 +75,7 @@ public class DeepUndergroundLootTableProvider extends FabricBlockLootTableProvid
         addDrop(DeepUndergroundBlocks.SCHIST_BRICK_STAIRS);
         addDrop(DeepUndergroundBlocks.BLACK_GRANITE_STAIRS);
         addDrop(DeepUndergroundBlocks.POLISHED_BLACK_GRANITE_STAIRS);
+        addDrop(DeepUndergroundBlocks.HADEITE_BRICK_STAIRS);
 
         //WALLS
         addDrop(DeepUndergroundBlocks.COBBLED_GRIMSLATE_WALL);
@@ -77,6 +85,7 @@ public class DeepUndergroundLootTableProvider extends FabricBlockLootTableProvid
         addDrop(DeepUndergroundBlocks.POLISHED_SCHIST_WALL);
         addDrop(DeepUndergroundBlocks.SCHIST_BRICK_WALL);
         addDrop(DeepUndergroundBlocks.BLACK_GRANITE_WALL);
+        addDrop(DeepUndergroundBlocks.HADEITE_BRICK_WALL);
     }
 
     public void addSlab(Block block)

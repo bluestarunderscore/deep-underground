@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hadeite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "deep_underground:hadeite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "deep_underground:hadeite_clump"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hadeite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "deep_underground:hadeite_clump"
+    ]
+  }
+}

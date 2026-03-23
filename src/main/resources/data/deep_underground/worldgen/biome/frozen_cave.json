@@ -22,22 +22,18 @@
 	"carvers": {
 		"air": [
 			"minecraft:cave",
-			"minecraft:cave_extra_underground",
-			"minecraft:canyon"
+			"minecraft:cave_extra_underground"
 		]
 	},
 	"features": [
 		[],
-		[
-			"minecraft:lake_lava_underground"
-
-		],
+		[],
 		[
 			"deep_underground:amethyst_geode_deep",
+			"deep_underground:ice_pillar",
 			"deep_underground:monster_room_dung"
 		],
-		[
-		],
+		[],
 		[],
 		[
 			"deep_underground:ore_smooth_basalt",
@@ -49,6 +45,7 @@
 			"deep_underground:ore_iron_deep",
 			"deep_underground:ore_gold_deep",
 			"deep_underground:ore_diamond_deep",
+			"deep_underground:ore_cyclite_deep",
 			"deep_underground:ore_lapis_deep",
 			"deep_underground:ore_redstone_deep",
 			"deep_underground:ore_cerulium_deep",

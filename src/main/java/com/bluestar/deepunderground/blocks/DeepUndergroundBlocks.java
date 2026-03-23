@@ -21,6 +21,9 @@ public class DeepUndergroundBlocks
     public static final Block DEEPSLATE_CERULIUM_ORE = register(new Block(AbstractBlock.Settings.copy(Blocks.ANCIENT_DEBRIS).sounds(BlockSoundGroup.DEEPSLATE)),
             "deepslate_cerulium_ore", true, true);
 
+    public static final Block DEEPSLATE_CYCLITE_ORE = register(new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_COPPER_ORE).sounds(BlockSoundGroup.AMETHYST_BLOCK)),
+            "deepslate_cyclite_ore", true, false);
+
     public static final Block RAW_VIRIDIUM_BLOCK = register(new Block(AbstractBlock.Settings.copy(Blocks.RAW_GOLD_BLOCK)),
             "raw_viridium_block", true, true);
     public static final Block RAW_CERULIUM_BLOCK = register(new Block(AbstractBlock.Settings.copy(Blocks.RAW_GOLD_BLOCK).strength(30.0F, 1200.0F)),
@@ -30,6 +33,9 @@ public class DeepUndergroundBlocks
             "viridium_block", true, true);
     public static final Block CERULIUM_BLOCK = register(new Block(AbstractBlock.Settings.copy(Blocks.NETHERITE_BLOCK).sounds(BlockSoundGroup.METAL)),
             "cerulium_block", true, true);
+
+    public static final Block CYCLITE_BLOCK = register(new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)),
+            "cyclite_block", true, true);
 
     public static final Block INERT_DEPTHBOUND_BLOCK = register(new InertDepthboundBlock(),
             "inert_depthbound_block", true, true);
@@ -63,6 +69,15 @@ public class DeepUndergroundBlocks
     public static final Block CHISELED_SCHIST = register(new Block(AbstractBlock.Settings.copy(Blocks.CHISELED_DEEPSLATE)),
             "chiseled_schist", true, false);
 
+    public static final Block HADEITE = register(new Block(AbstractBlock.Settings.copy(Blocks.CLAY).sounds(BlockSoundGroup.PACKED_MUD)),
+            "hadeite", true, false);
+
+    public static final Block HADEITE_BRICKS = register(new Block(AbstractBlock.Settings.copy(Blocks.BRICKS)),
+            "hadeite_bricks", true, false);
+
+    public static final Block CHISELED_HADEITE_BRICKS = register(new Block(AbstractBlock.Settings.copy(Blocks.BRICKS)),
+            "chiseled_hadeite_bricks", true, false);
+
     //STONE SLABS
     public static final Block BLACK_GRANITE_SLAB = register(new SlabBlock(AbstractBlock.Settings.copy(Blocks.GRANITE_SLAB)),
             "black_granite_slab", true, false);
@@ -80,6 +95,8 @@ public class DeepUndergroundBlocks
             "polished_schist_slab", true, false);
     public static final Block SCHIST_BRICK_SLAB = register(new SlabBlock(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_BRICK_SLAB)),
             "schist_brick_slab", true, false);
+    public static final Block HADEITE_BRICK_SLAB = register(new SlabBlock(AbstractBlock.Settings.copy(Blocks.BRICK_SLAB)),
+            "hadeite_brick_slab", true, false);
 
     //STONE STAIRS
     public static final Block BLACK_GRANITE_STAIRS = register(new StairsBlock(DeepUndergroundBlocks.BLACK_GRANITE.getDefaultState(),
@@ -102,6 +119,9 @@ public class DeepUndergroundBlocks
     public static final Block SCHIST_BRICK_STAIRS = register(new StairsBlock(DeepUndergroundBlocks.SCHIST_BRICKS.getDefaultState(),AbstractBlock.Settings.copy(Blocks.DEEPSLATE_BRICK_STAIRS)),
             "schist_brick_stairs", true, false);
 
+    public static final Block HADEITE_BRICK_STAIRS = register(new StairsBlock(DeepUndergroundBlocks.HADEITE_BRICKS.getDefaultState(),AbstractBlock.Settings.copy(Blocks.BRICK_STAIRS)),
+            "hadeite_brick_stairs", true, false);
+
     public static final Block BLACK_GRANITE_WALL = register(new WallBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_DEEPSLATE_WALL).sounds(BlockSoundGroup.STONE)),
             "black_granite_wall", true, false);
 
@@ -118,6 +138,9 @@ public class DeepUndergroundBlocks
             "polished_schist_wall", true, false);
     public static final Block SCHIST_BRICK_WALL = register(new WallBlock(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_BRICK_WALL)),
             "schist_brick_wall", true, false);
+
+    public static final Block HADEITE_BRICK_WALL = register(new WallBlock(AbstractBlock.Settings.copy(Blocks.BRICK_WALL)),
+            "hadeite_brick_wall", true, false);
 
     public static final CustomPortalBlock DEEP_PORTAL = registerPortal(
             new DeepUndergroundPortalBlock(AbstractBlock.Settings

@@ -26,6 +26,9 @@ public class DeepUndergroundBlockTagProvider extends FabricTagProvider.BlockTagP
                 .add(DeepUndergroundBlocks.CERULIUM_BLOCK)
                 .add(DeepUndergroundBlocks.DEPTHBOUND_STEEL_BLOCK);
 
+        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+                .add(DeepUndergroundBlocks.HADEITE);
+
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(DeepUndergroundBlocks.GRIMSLATE)
                 .add(DeepUndergroundBlocks.COBBLED_GRIMSLATE)
@@ -70,7 +73,14 @@ public class DeepUndergroundBlockTagProvider extends FabricTagProvider.BlockTagP
                 .add(DeepUndergroundBlocks.VIRIDIUM_BLOCK)
                 .add(DeepUndergroundBlocks.CERULIUM_BLOCK)
                 .add(DeepUndergroundBlocks.INERT_DEPTHBOUND_BLOCK)
-                .add(DeepUndergroundBlocks.DEPTHBOUND_STEEL_BLOCK);
+                .add(DeepUndergroundBlocks.DEPTHBOUND_STEEL_BLOCK)
+                .add(DeepUndergroundBlocks.DEEPSLATE_CYCLITE_ORE)
+                .add(DeepUndergroundBlocks.CYCLITE_BLOCK)
+                .add(DeepUndergroundBlocks.CHISELED_HADEITE_BRICKS)
+                .add(DeepUndergroundBlocks.HADEITE_BRICKS)
+                .add(DeepUndergroundBlocks.HADEITE_BRICK_SLAB)
+                .add(DeepUndergroundBlocks.HADEITE_BRICK_STAIRS)
+                .add(DeepUndergroundBlocks.HADEITE_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.BASE_STONE_OVERWORLD)
                 .add(DeepUndergroundBlocks.GRIMSLATE)
@@ -105,7 +115,8 @@ public class DeepUndergroundBlockTagProvider extends FabricTagProvider.BlockTagP
                 .add(DeepUndergroundBlocks.COBBLED_SCHIST_STAIRS)
                 .add(DeepUndergroundBlocks.POLISHED_SCHIST_STAIRS)
                 .add(DeepUndergroundBlocks.SCHIST_BRICK_STAIRS)
-                .add(DeepUndergroundBlocks.GRIMSLATE_BRICK_STAIRS);
+                .add(DeepUndergroundBlocks.GRIMSLATE_BRICK_STAIRS)
+                .add(DeepUndergroundBlocks.HADEITE_BRICK_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(DeepUndergroundBlocks.BLACK_GRANITE_SLAB)
@@ -115,7 +126,8 @@ public class DeepUndergroundBlockTagProvider extends FabricTagProvider.BlockTagP
                 .add(DeepUndergroundBlocks.COBBLED_SCHIST_SLAB)
                 .add(DeepUndergroundBlocks.POLISHED_SCHIST_SLAB)
                 .add(DeepUndergroundBlocks.SCHIST_BRICK_SLAB)
-                .add(DeepUndergroundBlocks.GRIMSLATE_BRICK_SLAB);
+                .add(DeepUndergroundBlocks.GRIMSLATE_BRICK_SLAB)
+                .add(DeepUndergroundBlocks.HADEITE_BRICK_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(DeepUndergroundBlocks.BLACK_GRANITE_WALL)
@@ -124,6 +136,7 @@ public class DeepUndergroundBlockTagProvider extends FabricTagProvider.BlockTagP
                 .add(DeepUndergroundBlocks.GRIMSLATE_BRICK_WALL)
                 .add(DeepUndergroundBlocks.COBBLED_SCHIST_WALL)
                 .add(DeepUndergroundBlocks.POLISHED_SCHIST_WALL)
-                .add(DeepUndergroundBlocks.SCHIST_BRICK_WALL);
+                .add(DeepUndergroundBlocks.SCHIST_BRICK_WALL)
+                .add(DeepUndergroundBlocks.HADEITE_BRICK_WALL);
     }
 }

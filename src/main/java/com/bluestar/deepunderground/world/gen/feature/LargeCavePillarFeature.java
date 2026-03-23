@@ -39,7 +39,8 @@ public class LargeCavePillarFeature extends Feature<LargeCavePillarFeatureConfig
             return false;
         } else {
             Optional<CaveSurface> optional = CaveSurface.create(
-                    structureWorldAccess, blockPos, largeDripstoneFeatureConfig.floorToCeilingSearchRange, DripstoneHelper::canGenerate, DripstoneHelper::canReplaceOrLava
+                    structureWorldAccess, blockPos, largeDripstoneFeatureConfig.floorToCeilingSearchRange,
+                    LargeCavePillarHelper::canGenerate, LargeCavePillarHelper::canReplaceOrLava
             );
             if (!optional.isEmpty() && optional.get() instanceof CaveSurface.Bounded) {
                 CaveSurface.Bounded bounded = (CaveSurface.Bounded)optional.get();
@@ -178,7 +179,7 @@ public class LargeCavePillarFeature extends Feature<LargeCavePillarFeatureConfig
                                     bl = true;
                                     Block block = this.pillarBlock;
                                     world.setBlockState(blockPos, block.getDefaultState(), Block.NOTIFY_LISTENERS);
-                                } else if (bl && world.getBlockState(blockPos).isIn(BlockTags.BASE_STONE_OVERWORLD)) {
+                                } else if (bl && (world.getBlockState(blockPos).isIn(BlockTags.BASE_STONE_OVERWORLD)) || world.getBlockState(blockPos).isOf(Blocks.PACKED_ICE)) {
                                     break;
                                 }
 

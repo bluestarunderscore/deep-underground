@@ -31,6 +31,12 @@ public class DeepUndergroundItems
 
     public static final Item DEPTHBOUND_SCRAP = register("depthbound_scrap", new Item(new Item.Settings()));
 
+    public static final Item CYCLITE = register("cyclite", new Item(new Item.Settings()));
+
+    public static final Item HADEITE_CLUMP = register("hadeite_clump", new Item(new Item.Settings()));
+
+    public static final Item HADEITE_BRICK = register("hadeite_brick", new Item(new Item.Settings()));
+
     public static final Item VIRIDIUM_HELMET = registerItem("viridium_helmet",
             new ArmorItem(DeepUndergroundArmorMaterials.VIRIDIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().fireproof()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(109)))); //199
@@ -93,20 +99,24 @@ public class DeepUndergroundItems
             new SwordItem(DeepUndergroundToolMaterials.DEPTHBOUND_STEEL, new Item.Settings().fireproof()
                     .attributeModifiers(MiningToolItem.createAttributeModifiers(DeepUndergroundToolMaterials.DEPTHBOUND_STEEL, 1, -2.4f))));
     public static final Item DEPTHBOUND_PICKAXE = registerItem("depthbound_steel_pickaxe",
-            new PickaxeItem(DeepUndergroundToolMaterials.CERULIUM, new Item.Settings().fireproof()
-                    .attributeModifiers(PickaxeItem.createAttributeModifiers(DeepUndergroundToolMaterials.CERULIUM, -1, -2.8f))));
+            new PickaxeItem(DeepUndergroundToolMaterials.DEPTHBOUND_STEEL, new Item.Settings().fireproof()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(DeepUndergroundToolMaterials.DEPTHBOUND_STEEL, -1, -2.8f))));
     public static final Item DEPTHBOUND_AXE = registerItem("depthbound_steel_axe",
-            new AxeItem(DeepUndergroundToolMaterials.CERULIUM, new Item.Settings().fireproof()
-                    .attributeModifiers(AxeItem.createAttributeModifiers(DeepUndergroundToolMaterials.CERULIUM, 2, -3f))));
+            new AxeItem(DeepUndergroundToolMaterials.DEPTHBOUND_STEEL, new Item.Settings().fireproof()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(DeepUndergroundToolMaterials.DEPTHBOUND_STEEL, 2, -3f))));
     public static final Item DEPTHBOUND_SHOVEL = registerItem("depthbound_steel_shovel",
-            new ShovelItem(DeepUndergroundToolMaterials.CERULIUM, new Item.Settings().fireproof()
-                    .attributeModifiers(ShovelItem.createAttributeModifiers(DeepUndergroundToolMaterials.CERULIUM, -0.5F, -3f))));
+            new ShovelItem(DeepUndergroundToolMaterials.DEPTHBOUND_STEEL, new Item.Settings().fireproof()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(DeepUndergroundToolMaterials.DEPTHBOUND_STEEL, -0.5F, -3f))));
     public static final Item DEPTHBOUND_HOE = registerItem("depthbound_steel_hoe",
-            new HoeItem(DeepUndergroundToolMaterials.CERULIUM, new Item.Settings().fireproof()
-                    .attributeModifiers(HoeItem.createAttributeModifiers(DeepUndergroundToolMaterials.CERULIUM, -0.5F, 0f))));
+            new HoeItem(DeepUndergroundToolMaterials.DEPTHBOUND_STEEL, new Item.Settings().fireproof()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(DeepUndergroundToolMaterials.DEPTHBOUND_STEEL, -0.5F, 0f))));
 
     public static void initialize()
     {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.HADEITE_CLUMP));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.CYCLITE));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.RAW_VIRIDIUM));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
@@ -119,6 +129,8 @@ public class DeepUndergroundItems
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.CERULIUM_NUGGET));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.DEPTHBOUND_STEEL_NUGGET));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.HADEITE_BRICK));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.VIRIDIUM_INGOT));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
@@ -152,7 +164,6 @@ public class DeepUndergroundItems
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.DEPTHBOUND_SHOVEL));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.DEPTHBOUND_HOE));
-
         //COMBAR
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.VIRIDIUM_SWORD));
@@ -162,6 +173,10 @@ public class DeepUndergroundItems
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.CERULIUM_SWORD));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.CERULIUM_AXE));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.DEPTHBOUND_SWORD));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.DEPTHBOUND_AXE));
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundItems.VIRIDIUM_HELMET));
@@ -185,6 +200,19 @@ public class DeepUndergroundItems
         //BLOCKS
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.FRAMED_POLISHED_BLACKSTONE.asItem()));
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.HADEITE.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.HADEITE_BRICKS.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.HADEITE_BRICK_STAIRS.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.HADEITE_BRICK_SLAB.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.HADEITE_BRICK_WALL.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.CHISELED_HADEITE_BRICKS.asItem()));
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.BLACK_GRANITE.asItem()));
@@ -259,11 +287,15 @@ public class DeepUndergroundItems
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.CHISELED_SCHIST.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.DEEPSLATE_CYCLITE_ORE.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.DEEPSLATE_VIRIDIUM_ORE.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.DEEPSLATE_CERULIUM_ORE.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.RAW_VIRIDIUM_BLOCK.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.CYCLITE_BLOCK.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.RAW_CERULIUM_BLOCK.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
@@ -276,11 +308,15 @@ public class DeepUndergroundItems
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.DEPTHBOUND_STEEL_BLOCK.asItem()));
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.HADEITE.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.BLACK_GRANITE.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.GRIMSLATE.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.SCHIST.asItem()));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
+                .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.DEEPSLATE_CYCLITE_ORE.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
                 .register((itemGroup) -> itemGroup.add(DeepUndergroundBlocks.DEEPSLATE_VIRIDIUM_ORE.asItem()));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)

@@ -43,6 +43,13 @@
     "deep_underground:viridium_block",
     "deep_underground:cerulium_block",
     "deep_underground:inert_depthbound_block",
-    "deep_underground:depthbound_steel_block"
+    "deep_underground:depthbound_steel_block",
+    "deep_underground:deepslate_cyclite_ore",
+    "deep_underground:cyclite_block",
+    "deep_underground:chiseled_hadeite_bricks",
+    "deep_underground:hadeite_bricks",
+    "deep_underground:hadeite_brick_slab",
+    "deep_underground:hadeite_brick_stairs",
+    "deep_underground:hadeite_brick_wall"
   ]
 }

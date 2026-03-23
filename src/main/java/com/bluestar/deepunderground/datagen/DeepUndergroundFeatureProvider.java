@@ -58,5 +58,17 @@ public class DeepUndergroundFeatureProvider extends FabricDynamicRegistryProvide
                         UniformFloatProvider.create(0.0F, 0.3F),
                         4,
                         0.6F)));
+
+        registerable.register(configuredFeatureKey(Identifier.of(DeepUnderground.MOD_ID, "ice_pillar")),
+                new ConfiguredFeature<>(DeepUndergroundFeatures.ICE_PILLAR_FEATURE, new LargeCavePillarFeatureConfig(
+                        28,
+                        UniformIntProvider.create(7, 20),
+                        UniformFloatProvider.create(0.4F, 2.0F),
+                        0.32F,
+                        UniformFloatProvider.create(0.3F, 0.9F),
+                        UniformFloatProvider.create(0.4F, 1.0F),
+                        UniformFloatProvider.create(0.0F, 0.3F),
+                        4,
+                        0.6F)));
     }
 }

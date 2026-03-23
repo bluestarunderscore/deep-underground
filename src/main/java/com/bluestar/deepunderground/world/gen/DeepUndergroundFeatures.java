@@ -12,6 +12,9 @@ public class DeepUndergroundFeatures {
     public static final LargeCavePillarFeature DEEPSLATE_PILLAR_FEATURE =
             registerFeature("deepslate_pillar", new LargeCavePillarFeature(LargeCavePillarFeatureConfig.CODEC, Blocks.DEEPSLATE));
 
+    public static final LargeCavePillarFeature ICE_PILLAR_FEATURE =
+            registerFeature("ice_pillar", new LargeCavePillarFeature(LargeCavePillarFeatureConfig.CODEC, Blocks.PACKED_ICE));
+
     private static <C extends FeatureConfig, F extends Feature<C>> F registerFeature(
             String id, F feature) {
 

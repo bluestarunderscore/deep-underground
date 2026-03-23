@@ -1,14 +1,9 @@
 package com.bluestar.deepunderground.world.gen.feature;
 
-import java.util.function.Consumer;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.PointedDripstoneBlock;
-import net.minecraft.block.enums.Thickness;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.StructureWorldAccess;
 import net.minecraft.world.WorldAccess;
@@ -56,66 +51,16 @@ public class LargeCavePillarHelper {
         return world.testBlockState(pos, LargeCavePillarHelper::canGenerateOrLava);
     }
 
-    protected static void getDripstoneThickness(Direction direction, int height, boolean merge, Consumer<BlockState> callback) {
-        if (height >= 3) {
-            callback.accept(getState(direction, Thickness.BASE));
-
-            for (int i = 0; i < height - 3; i++) {
-                callback.accept(getState(direction, Thickness.MIDDLE));
-            }
-        }
-
-        if (height >= 2) {
-            callback.accept(getState(direction, Thickness.FRUSTUM));
-        }
-
-        if (height >= 1) {
-            callback.accept(getState(direction, merge ? Thickness.TIP_MERGE : Thickness.TIP));
-        }
-    }
-
-    protected static void generatePointedDripstone(WorldAccess world, BlockPos pos, Direction direction, int height, boolean merge) {
-        if (canReplace(world.getBlockState(pos.offset(direction.getOpposite())))) {
-            BlockPos.Mutable mutable = pos.mutableCopy();
-            getDripstoneThickness(direction, height, merge, state -> {
-                if (state.isOf(Blocks.POINTED_DRIPSTONE)) {
-                    state = state.with(PointedDripstoneBlock.WATERLOGGED, world.isWater(mutable));
-                }
-
-                world.setBlockState(mutable, state, Block.NOTIFY_LISTENERS);
-                mutable.move(direction);
-            });
-        }
-    }
-
-    protected static boolean generateDripstoneBlock(WorldAccess world, BlockPos pos) {
-        BlockState blockState = world.getBlockState(pos);
-        if (blockState.isIn(BlockTags.DRIPSTONE_REPLACEABLE_BLOCKS)) {
-            world.setBlockState(pos, Blocks.DRIPSTONE_BLOCK.getDefaultState(), Block.NOTIFY_LISTENERS);
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    private static BlockState getState(Direction direction, Thickness thickness) {
-        return Blocks.POINTED_DRIPSTONE.getDefaultState().with(PointedDripstoneBlock.VERTICAL_DIRECTION, direction).with(PointedDripstoneBlock.THICKNESS, thickness);
-    }
-
     public static boolean canReplaceOrLava(BlockState state) {
         return canReplace(state) || state.isOf(Blocks.LAVA);
     }
 
     public static boolean canReplace(BlockState state) {
-        return state.isOf(Blocks.DRIPSTONE_BLOCK) || state.isIn(BlockTags.DRIPSTONE_REPLACEABLE_BLOCKS);
+        return state.isOf(Blocks.PACKED_ICE) || state.isIn(BlockTags.BASE_STONE_OVERWORLD);
     }
 
     public static boolean canGenerate(BlockState state) {
         return state.isAir() || state.isOf(Blocks.WATER);
-    }
-
-    public static boolean cannotGenerate(BlockState state) {
-        return !state.isAir() && !state.isOf(Blocks.WATER);
     }
 
     public static boolean canGenerateOrLava(BlockState state) {

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hadeite_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "deep_underground:hadeite_bricks"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:hadeite_brick_slab_from_hadeite_bricks_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hadeite_bricks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:hadeite_brick_slab_from_hadeite_bricks_stonecutting"
+    ]
+  }
+}

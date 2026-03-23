@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "g": {
+      "item": "deep_underground:cyclite"
+    }
+  },
+  "pattern": [
+    "gg",
+    "gg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "deep_underground:cyclite_block"
+  }
+}

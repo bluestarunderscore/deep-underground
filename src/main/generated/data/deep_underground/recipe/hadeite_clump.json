@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "deep_underground:hadeite"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "deep_underground:hadeite_clump"
+  }
+}

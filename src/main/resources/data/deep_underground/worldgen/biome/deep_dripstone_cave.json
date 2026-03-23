@@ -2,8 +2,7 @@
   "carvers": {
     "air": [
       "minecraft:cave",
-      "minecraft:cave_extra_underground",
-      "minecraft:canyon"
+      "minecraft:cave_extra_underground"
     ]
   },
   "downfall": 0.4,
@@ -51,6 +50,8 @@
       "deep_underground:ore_iron_deep",
       "deep_underground:ore_gold_deep",
       "deep_underground:ore_diamond_deep",
+      "deep_underground:ore_cyclite_deep",
+      "deep_underground:blob_hadeite",
       "deep_underground:ore_lapis_deep",
       "deep_underground:ore_redstone_deep",
       "deep_underground:ore_cerulium_deep",

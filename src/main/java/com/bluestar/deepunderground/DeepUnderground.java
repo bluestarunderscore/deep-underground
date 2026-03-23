@@ -5,6 +5,7 @@ import com.bluestar.deepunderground.items.DeepUndergroundItems;
 import com.bluestar.deepunderground.world.gen.DeepUndergroundFeatures;
 import com.bluestar.deepunderground.world.loot.DeepUndergroundLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.kyrptonaught.customportalapi.event.CPASoundEventData;
 import net.minecraft.fluid.Fluids;
@@ -24,6 +25,8 @@ public class DeepUnderground implements ModInitializer {
 		DeepUndergroundSounds.registerSounds();
 		DeepUndergroundFeatures.initialize();
 		DeepUndergroundLootTableModifiers.modifyLootTables();
+		FuelRegistry.INSTANCE.add(DeepUndergroundItems.CYCLITE, 3200);
+		FuelRegistry.INSTANCE.add(DeepUndergroundBlocks.CYCLITE_BLOCK, 12800);
 		CustomPortalBuilder.beginPortal()
 				.frameBlock(DeepUndergroundBlocks.FRAMED_POLISHED_BLACKSTONE)
 				.customPortalBlock(DeepUndergroundBlocks.DEEP_PORTAL)

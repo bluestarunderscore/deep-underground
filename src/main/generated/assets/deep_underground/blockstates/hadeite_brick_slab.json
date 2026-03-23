@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "deep_underground:block/hadeite_brick_slab"
+    },
+    "type=double": {
+      "model": "deep_underground:block/hadeite_bricks"
+    },
+    "type=top": {
+      "model": "deep_underground:block/hadeite_brick_slab_top"
+    }
+  }
+}

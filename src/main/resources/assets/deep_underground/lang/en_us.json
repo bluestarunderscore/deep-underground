@@ -9,12 +9,16 @@
 	"sounds.deep_underground.portal_break": "Portal closes",
 
 	"item.deep_underground.raw_cerulium": "Raw Cerulium",
+	"item.deep_underground.raw_hadeite": "Raw Hadeite",
 	"item.deep_underground.raw_viridium": "Raw Viridium",
 	"item.deep_underground.depthbound_scrap": "Depthbound Scrap",
 	"item.deep_underground.cerulium_ingot": "Cerulium Ingot",
 	"item.deep_underground.cerulium_nugget": "Cerulium Nugget",
 	"item.deep_underground.viridium_ingot": "Viridium Ingot",
 	"item.deep_underground.viridium_nugget": "Viridium Nugget",
+	"item.deep_underground.hadeite_brick": "Hadeite Brick",
+	"item.deep_underground.hadeite_clump": "Hadeite Clump",
+	"item.deep_underground.cyclite": "Cyclite",
 	"item.deep_underground.depthbound_steel_ingot": "Depthbound Steel Ingot",
 	"item.deep_underground.depthbound_steel_nugget": "Depthbound Steel Nugget",
 
@@ -96,11 +100,19 @@
 	"block.deep_underground.cracked_schist_bricks": "Cracked Schist Bricks",
 	"block.deep_underground.chiseled_schist": "Chiseled Schist",
 
-	"block.deep_underground.nether_red_onyx_ore": "Nether Red Onyx Ore",
 	"block.deep_underground.deepslate_viridium_ore": "Deepslate Viridium Ore",
+	"block.deep_underground.deepslate_hadeite_ore": "Deepslate Hadeite Ore",
+	"block.deep_underground.deepslate_cyclite_ore": "Deepslate Cyclite Ore",
 	"block.deep_underground.deepslate_cerulium_ore": "Deepslate Cerulium Ore",
 	"block.deep_underground.raw_viridium_block": "Block of Raw Viridium",
 	"block.deep_underground.raw_cerulium_block": "Block of Raw Cerulium",
 	"block.deep_underground.viridium_block": "Block of Viridium",
-	"block.deep_underground.cerulium_block": "Block of Cerulium"
+	"block.deep_underground.cerulium_block": "Block of Cerulium",
+	"block.deep_underground.cyclite_block": "Block of Cyclite",
+	"block.deep_underground.hadeite": "Hadeite",
+	"block.deep_underground.hadeite_bricks": "Hadeite Bricks",
+	"block.deep_underground.hadeite_brick_stairs": "Hadeite Brick Stairs",
+	"block.deep_underground.hadeite_brick_slab": "Hadeite Brick Slab",
+	"block.deep_underground.hadeite_brick_wall": "Hadeite Brick Wall",
+	"block.deep_underground.chiseled_hadeite_bricks": "Chiseled Hadeite Bricks"
 }

@@ -51,14 +51,22 @@ public class DeepUndergroundModelProvider extends FabricModelProvider
                 DeepUndergroundBlocks.SCHIST_BRICKS
         );
 
+        BlockStateModelGenerator.BlockTexturePool hadeiteBricksPool = blockStateModelGenerator.registerCubeAllModelTexturePool(
+                DeepUndergroundBlocks.HADEITE_BRICKS
+        );
+
         //BLOCKS
+        blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.HADEITE);
+        blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.CHISELED_HADEITE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.FRAMED_POLISHED_BLACKSTONE);
         blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.CRACKED_SCHIST_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.CHISELED_SCHIST);
+        blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.DEEPSLATE_CYCLITE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.DEEPSLATE_VIRIDIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.DEEPSLATE_CERULIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.RAW_VIRIDIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.RAW_CERULIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.CYCLITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.VIRIDIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.CERULIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(DeepUndergroundBlocks.DEPTHBOUND_STEEL_BLOCK);
@@ -96,10 +104,17 @@ public class DeepUndergroundModelProvider extends FabricModelProvider
         schistBricksPool.stairs(DeepUndergroundBlocks.SCHIST_BRICK_STAIRS);
         schistBricksPool.slab(DeepUndergroundBlocks.SCHIST_BRICK_SLAB);
         schistBricksPool.wall(DeepUndergroundBlocks.SCHIST_BRICK_WALL);
+
+        hadeiteBricksPool.stairs(DeepUndergroundBlocks.HADEITE_BRICK_STAIRS);
+        hadeiteBricksPool.slab(DeepUndergroundBlocks.HADEITE_BRICK_SLAB);
+        hadeiteBricksPool.wall(DeepUndergroundBlocks.HADEITE_BRICK_WALL);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(DeepUndergroundItems.HADEITE_CLUMP, Models.GENERATED);
+        itemModelGenerator.register(DeepUndergroundItems.HADEITE_BRICK, Models.GENERATED);
+        itemModelGenerator.register(DeepUndergroundItems.CYCLITE, Models.GENERATED);
         itemModelGenerator.register(DeepUndergroundItems.RAW_CERULIUM, Models.GENERATED);
         itemModelGenerator.register(DeepUndergroundItems.RAW_VIRIDIUM, Models.GENERATED);
         itemModelGenerator.register(DeepUndergroundItems.CERULIUM_INGOT, Models.GENERATED);
