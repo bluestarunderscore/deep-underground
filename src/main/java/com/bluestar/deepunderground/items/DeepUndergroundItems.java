@@ -39,7 +39,7 @@ public class DeepUndergroundItems
 
     public static final Item VIRIDIUM_HELMET = registerItem("viridium_helmet",
             new ArmorItem(DeepUndergroundArmorMaterials.VIRIDIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().fireproof()
-                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(109)))); //199
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(109))));
     public static final Item VIRIDIUM_CHESTPLATE = registerItem("viridium_chestplate",
             new ArmorItem(DeepUndergroundArmorMaterials.VIRIDIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof()
                     .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(100))));
@@ -52,7 +52,7 @@ public class DeepUndergroundItems
 
     public static final Item CERULIUM_HELMET = registerItem("cerulium_helmet",
             new ArmorItem(DeepUndergroundArmorMaterials.CERULIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().fireproof()
-                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(168)))); //1199
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(168))));
     public static final Item CERULIUM_CHESTPLATE = registerItem("cerulium_chestplate",
             new ArmorItem(DeepUndergroundArmorMaterials.CERULIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof()
                     .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(150))));

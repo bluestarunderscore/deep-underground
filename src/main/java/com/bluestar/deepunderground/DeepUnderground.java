@@ -25,8 +25,8 @@ public class DeepUnderground implements ModInitializer {
 		DeepUndergroundSounds.registerSounds();
 		DeepUndergroundFeatures.initialize();
 		DeepUndergroundLootTableModifiers.modifyLootTables();
-		FuelRegistry.INSTANCE.add(DeepUndergroundItems.CYCLITE, 3200);
-		FuelRegistry.INSTANCE.add(DeepUndergroundBlocks.CYCLITE_BLOCK, 12800);
+		FuelRegistry.INSTANCE.add(DeepUndergroundItems.CYCLITE, 800);
+		FuelRegistry.INSTANCE.add(DeepUndergroundBlocks.CYCLITE_BLOCK, 3200);
 		CustomPortalBuilder.beginPortal()
 				.frameBlock(DeepUndergroundBlocks.FRAMED_POLISHED_BLACKSTONE)
 				.customPortalBlock(DeepUndergroundBlocks.DEEP_PORTAL)
